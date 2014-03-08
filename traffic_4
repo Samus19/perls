@@ -1,0 +1,40 @@
+#!/usr/bin/perl
+##
+$c = 0;
+$l = 0;
+$t = 0;
+use List::Util qw(min max);
+my @case ;
+my @current ;
+$nput = <>;
+@string = split(' ', $nput );
+
+$bput = <>;
+@width = split(' ', $bput );
+
+while($l < $string[1] ) {
+        $l = $l + 1;
+        $case[$l] = <>;}
+
+
+hile($t < $string[1] ) {
+
+        $t = $t + 1 ;
+        @enter_exit = split(' ', $case[$t]);
+        $count = $enter_exit[0];
+ while($count < @enter_exit[1]){
+                if($width[$count] == min@width )
+                        { print min@width ;}
+                        $count ++; last; } #######
+#      if($width[$enter_exit[0] .. $enter_exit[1]] == min(@width) ){
+#       print min(@width) ;
+#               }        
+#       els
+if($width[$enter_exit[0]] < $width[$enter_exit[1]]){
+        print $width[$enter_exit[0]];}
+        else{ print $width[$enter_exit[1]];}
+
+print "\n";
+
+}
+
